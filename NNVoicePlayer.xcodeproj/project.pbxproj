@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6AB92C4615761A86008C1A4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB92C4515761A86008C1A4A /* UIKit.framework */; };
+		6AB92C4815761A86008C1A4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB92C4715761A86008C1A4A /* Foundation.framework */; };
+		6AB92C4A15761A86008C1A4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB92C4915761A86008C1A4A /* CoreGraphics.framework */; };
+		6AB92C5015761A86008C1A4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AB92C4E15761A86008C1A4A /* InfoPlist.strings */; };
+		6AB92C5215761A86008C1A4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB92C5115761A86008C1A4A /* main.m */; };
+		6AB92C5615761A86008C1A4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB92C5515761A86008C1A4A /* AppDelegate.m */; };
+		6AB92C5915761A86008C1A4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB92C5815761A86008C1A4A /* ViewController.m */; };
+		6AB92C5C15761A86008C1A4A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB92C5A15761A86008C1A4A /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6AB92C4115761A86008C1A4A /* NNVoicePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNVoicePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB92C4515761A86008C1A4A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6AB92C4715761A86008C1A4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6AB92C4915761A86008C1A4A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6AB92C4D15761A86008C1A4A /* NNVoicePlayer-Info.plist */ = {isa = PBXFileReference; path = "NNVoicePlayer-Info.plist"; sourceTree = "<group>"; };
+		6AB92C4F15761A86008C1A4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6AB92C5115761A86008C1A4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6AB92C5315761A86008C1A4A /* NNVoicePlayer-Prefix.pch */ = {isa = PBXFileReference; path = "NNVoicePlayer-Prefix.pch"; sourceTree = "<group>"; };
+		6AB92C5415761A86008C1A4A /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		6AB92C5515761A86008C1A4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6AB92C5715761A86008C1A4A /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		6AB92C5815761A86008C1A4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6AB92C5B15761A86008C1A4A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AB92C3E15761A86008C1A4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB92C4615761A86008C1A4A /* UIKit.framework in Frameworks */,
+				6AB92C4815761A86008C1A4A /* Foundation.framework in Frameworks */,
+				6AB92C4A15761A86008C1A4A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AB92C3615761A86008C1A4A = {
+			isa = PBXGroup;
+			children = (
+				6AB92C4B15761A86008C1A4A /* NNVoicePlayer */,
+				6AB92C4415761A86008C1A4A /* Frameworks */,
+				6AB92C4215761A86008C1A4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6AB92C4215761A86008C1A4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AB92C4115761A86008C1A4A /* NNVoicePlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AB92C4415761A86008C1A4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AB92C4515761A86008C1A4A /* UIKit.framework */,
+				6AB92C4715761A86008C1A4A /* Foundation.framework */,
+				6AB92C4915761A86008C1A4A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AB92C4B15761A86008C1A4A /* NNVoicePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				6AB92C5415761A86008C1A4A /* AppDelegate.h */,
+				6AB92C5515761A86008C1A4A /* AppDelegate.m */,
+				6AB92C5715761A86008C1A4A /* ViewController.h */,
+				6AB92C5815761A86008C1A4A /* ViewController.m */,
+				6AB92C5A15761A86008C1A4A /* ViewController.xib */,
+				6AB92C4C15761A86008C1A4A /* Supporting Files */,
+			);
+			path = NNVoicePlayer;
+			sourceTree = "<group>";
+		};
+		6AB92C4C15761A86008C1A4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AB92C4D15761A86008C1A4A /* NNVoicePlayer-Info.plist */,
+				6AB92C4E15761A86008C1A4A /* InfoPlist.strings */,
+				6AB92C5115761A86008C1A4A /* main.m */,
+				6AB92C5315761A86008C1A4A /* NNVoicePlayer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AB92C4015761A86008C1A4A /* NNVoicePlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AB92C5F15761A86008C1A4A /* Build configuration list for PBXNativeTarget "NNVoicePlayer" */;
+			buildPhases = (
+				6AB92C3D15761A86008C1A4A /* Sources */,
+				6AB92C3E15761A86008C1A4A /* Frameworks */,
+				6AB92C3F15761A86008C1A4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NNVoicePlayer;
+			productName = NNVoicePlayer;
+			productReference = 6AB92C4115761A86008C1A4A /* NNVoicePlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AB92C3815761A86008C1A4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Simpletail;
+			};
+			buildConfigurationList = 6AB92C3B15761A86008C1A4A /* Build configuration list for PBXProject "NNVoicePlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6AB92C3615761A86008C1A4A;
+			productRefGroup = 6AB92C4215761A86008C1A4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AB92C4015761A86008C1A4A /* NNVoicePlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AB92C3F15761A86008C1A4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB92C5015761A86008C1A4A /* InfoPlist.strings in Resources */,
+				6AB92C5C15761A86008C1A4A /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AB92C3D15761A86008C1A4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB92C5215761A86008C1A4A /* main.m in Sources */,
+				6AB92C5615761A86008C1A4A /* AppDelegate.m in Sources */,
+				6AB92C5915761A86008C1A4A /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6AB92C4E15761A86008C1A4A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB92C4F15761A86008C1A4A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6AB92C5A15761A86008C1A4A /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB92C5B15761A86008C1A4A /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AB92C5D15761A86008C1A4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		6AB92C5E15761A86008C1A4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AB92C6015761A86008C1A4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NNVoicePlayer/NNVoicePlayer-Prefix.pch";
+				INFOPLIST_FILE = "NNVoicePlayer/NNVoicePlayer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6AB92C6115761A86008C1A4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NNVoicePlayer/NNVoicePlayer-Prefix.pch";
+				INFOPLIST_FILE = "NNVoicePlayer/NNVoicePlayer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AB92C3B15761A86008C1A4A /* Build configuration list for PBXProject "NNVoicePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB92C5D15761A86008C1A4A /* Debug */,
+				6AB92C5E15761A86008C1A4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AB92C5F15761A86008C1A4A /* Build configuration list for PBXNativeTarget "NNVoicePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB92C6015761A86008C1A4A /* Debug */,
+				6AB92C6115761A86008C1A4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AB92C3815761A86008C1A4A /* Project object */;
+}
