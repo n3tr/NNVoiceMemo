@@ -1,5 +1,6 @@
 # Xcode
 *.mp3
+NNVoicePlayer/*.mp3
 build/*
 *.pbxuser
 !default.pbxuser
