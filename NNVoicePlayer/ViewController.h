@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+#import "AudioPlayerCell.h"
+#import <AVFoundation/AVFoundation.h>
+
 @interface ViewController : UIViewController
+<AudioPlayerCellDelegate,UITableViewDataSource,UITableViewDelegate,AVAudioPlayerDelegate,NSFetchedResultsControllerDelegate>
+
+@property (strong, nonatomic) IBOutlet AudioPlayerCell *_audioCell;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic, retain) NSMutableArray *dataSource;
+
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+
+
+
 
 @end

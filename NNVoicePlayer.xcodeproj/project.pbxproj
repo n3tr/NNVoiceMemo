@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A625ABF15777BAD00636DAB /* NNMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A625ABE15777BAD00636DAB /* NNMusicPlayer.m */; };
+		6A625AC1157781ED00636DAB /* bossa1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A625AC0157781ED00636DAB /* bossa1.mp3 */; };
+		6A625AC315778ECA00636DAB /* openlove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A625AC215778ECA00636DAB /* openlove.mp3 */; };
+		6A625AC915779B8300636DAB /* dance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A625AC815779B8300636DAB /* dance.mp3 */; };
+		6A625ACE1577A0CF00636DAB /* NoteComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A625ACC1577A0CF00636DAB /* NoteComposerViewController.m */; };
+		6A625ACF1577A0CF00636DAB /* NoteComposerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A625ACD1577A0CF00636DAB /* NoteComposerViewController.xib */; };
+		6A625AD21577AD3000636DAB /* NNVoiceData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A625AD01577AD3000636DAB /* NNVoiceData.xcdatamodeld */; };
+		6A625AD51577AD9600636DAB /* NNItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A625AD41577AD9600636DAB /* NNItem.m */; };
+		6A625ADB1577ADB700636DAB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A625ADA1577ADB700636DAB /* CoreData.framework */; };
+		6A625AE31577B8D400636DAB /* VoiceRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A625AE11577B8D300636DAB /* VoiceRecorderViewController.m */; };
+		6A625AE41577B8D400636DAB /* VoiceRecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A625AE21577B8D400636DAB /* VoiceRecorderViewController.xib */; };
 		6AB92C4615761A86008C1A4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB92C4515761A86008C1A4A /* UIKit.framework */; };
 		6AB92C4815761A86008C1A4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB92C4715761A86008C1A4A /* Foundation.framework */; };
 		6AB92C4A15761A86008C1A4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB92C4915761A86008C1A4A /* CoreGraphics.framework */; };
@@ -15,22 +26,51 @@
 		6AB92C5615761A86008C1A4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB92C5515761A86008C1A4A /* AppDelegate.m */; };
 		6AB92C5915761A86008C1A4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB92C5815761A86008C1A4A /* ViewController.m */; };
 		6AB92C5C15761A86008C1A4A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB92C5A15761A86008C1A4A /* ViewController.xib */; };
+		6AB92C6415761BA8008C1A4A /* AudioPlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB92C6315761BA8008C1A4A /* AudioPlayerCell.m */; };
+		6AB92C6715761BC0008C1A4A /* AudioPlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB92C6615761BC0008C1A4A /* AudioPlayerCell.xib */; };
+		6AB92C6A15761C7B008C1A4A /* playControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB92C6915761C7B008C1A4A /* playControl.m */; };
+		6AB92C6C15761CE9008C1A4A /* play_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AB92C6B15761CE8008C1A4A /* play_icon.png */; };
+		6AB92C6E157623E1008C1A4A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB92C6D157623E1008C1A4A /* AVFoundation.framework */; };
+		6AB92C7015762467008C1A4A /* stop_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AB92C6F15762466008C1A4A /* stop_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A625ABD15777BAD00636DAB /* NNMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNMusicPlayer.h; path = NNMusicPlayer/NNMusicPlayer.h; sourceTree = "<group>"; };
+		6A625ABE15777BAD00636DAB /* NNMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNMusicPlayer.m; path = NNMusicPlayer/NNMusicPlayer.m; sourceTree = "<group>"; };
+		6A625AC0157781ED00636DAB /* bossa1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bossa1.mp3; sourceTree = "<group>"; };
+		6A625AC215778ECA00636DAB /* openlove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = openlove.mp3; sourceTree = "<group>"; };
+		6A625AC815779B8300636DAB /* dance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dance.mp3; sourceTree = "<group>"; };
+		6A625ACB1577A0CF00636DAB /* NoteComposerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteComposerViewController.h; path = NoteComposer/NoteComposerViewController.h; sourceTree = "<group>"; };
+		6A625ACC1577A0CF00636DAB /* NoteComposerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteComposerViewController.m; path = NoteComposer/NoteComposerViewController.m; sourceTree = "<group>"; };
+		6A625ACD1577A0CF00636DAB /* NoteComposerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteComposerViewController.xib; path = NoteComposer/NoteComposerViewController.xib; sourceTree = "<group>"; };
+		6A625AD11577AD3000636DAB /* NNVoiceData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NNVoiceData.xcdatamodel; sourceTree = "<group>"; };
+		6A625AD31577AD9600636DAB /* NNItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNItem.h; path = NNVoicePlayer/NNItem.h; sourceTree = "<group>"; };
+		6A625AD41577AD9600636DAB /* NNItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNItem.m; path = NNVoicePlayer/NNItem.m; sourceTree = "<group>"; };
+		6A625ADA1577ADB700636DAB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6A625AE01577B8D300636DAB /* VoiceRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceRecorderViewController.h; sourceTree = "<group>"; };
+		6A625AE11577B8D300636DAB /* VoiceRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceRecorderViewController.m; sourceTree = "<group>"; };
+		6A625AE21577B8D400636DAB /* VoiceRecorderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceRecorderViewController.xib; sourceTree = "<group>"; };
 		6AB92C4115761A86008C1A4A /* NNVoicePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNVoicePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB92C4515761A86008C1A4A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6AB92C4715761A86008C1A4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6AB92C4915761A86008C1A4A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6AB92C4D15761A86008C1A4A /* NNVoicePlayer-Info.plist */ = {isa = PBXFileReference; path = "NNVoicePlayer-Info.plist"; sourceTree = "<group>"; };
+		6AB92C4D15761A86008C1A4A /* NNVoicePlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NNVoicePlayer-Info.plist"; sourceTree = "<group>"; };
 		6AB92C4F15761A86008C1A4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6AB92C5115761A86008C1A4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6AB92C5315761A86008C1A4A /* NNVoicePlayer-Prefix.pch */ = {isa = PBXFileReference; path = "NNVoicePlayer-Prefix.pch"; sourceTree = "<group>"; };
-		6AB92C5415761A86008C1A4A /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		6AB92C5315761A86008C1A4A /* NNVoicePlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NNVoicePlayer-Prefix.pch"; sourceTree = "<group>"; };
+		6AB92C5415761A86008C1A4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6AB92C5515761A86008C1A4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6AB92C5715761A86008C1A4A /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		6AB92C5715761A86008C1A4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6AB92C5815761A86008C1A4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6AB92C5B15761A86008C1A4A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		6AB92C6215761BA8008C1A4A /* AudioPlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioPlayerCell.h; path = Cell/AudioPlayerCell.h; sourceTree = "<group>"; };
+		6AB92C6315761BA8008C1A4A /* AudioPlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioPlayerCell.m; path = Cell/AudioPlayerCell.m; sourceTree = "<group>"; };
+		6AB92C6615761BC0008C1A4A /* AudioPlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AudioPlayerCell.xib; path = Cell/AudioPlayerCell.xib; sourceTree = "<group>"; };
+		6AB92C6815761C7B008C1A4A /* playControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = playControl.h; path = Cell/playControl.h; sourceTree = "<group>"; };
+		6AB92C6915761C7B008C1A4A /* playControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = playControl.m; path = Cell/playControl.m; sourceTree = "<group>"; };
+		6AB92C6B15761CE8008C1A4A /* play_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_icon.png; sourceTree = "<group>"; };
+		6AB92C6D157623E1008C1A4A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6AB92C6F15762466008C1A4A /* stop_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A625ADB1577ADB700636DAB /* CoreData.framework in Frameworks */,
+				6AB92C6E157623E1008C1A4A /* AVFoundation.framework in Frameworks */,
 				6AB92C4615761A86008C1A4A /* UIKit.framework in Frameworks */,
 				6AB92C4815761A86008C1A4A /* Foundation.framework in Frameworks */,
 				6AB92C4A15761A86008C1A4A /* CoreGraphics.framework in Frameworks */,
@@ -47,10 +89,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A625ABB15777B8D00636DAB /* NNMusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				6A625ABD15777BAD00636DAB /* NNMusicPlayer.h */,
+				6A625ABE15777BAD00636DAB /* NNMusicPlayer.m */,
+			);
+			name = NNMusicPlayer;
+			sourceTree = "<group>";
+		};
+		6A625ACA1577A09900636DAB /* NoteComposer */ = {
+			isa = PBXGroup;
+			children = (
+				6A625ACB1577A0CF00636DAB /* NoteComposerViewController.h */,
+				6A625ACC1577A0CF00636DAB /* NoteComposerViewController.m */,
+				6A625ACD1577A0CF00636DAB /* NoteComposerViewController.xib */,
+			);
+			name = NoteComposer;
+			sourceTree = "<group>";
+		};
 		6AB92C3615761A86008C1A4A = {
 			isa = PBXGroup;
 			children = (
+				6A625ADA1577ADB700636DAB /* CoreData.framework */,
 				6AB92C4B15761A86008C1A4A /* NNVoicePlayer */,
+				6A625AD31577AD9600636DAB /* NNItem.h */,
+				6A625AD41577AD9600636DAB /* NNItem.m */,
 				6AB92C4415761A86008C1A4A /* Frameworks */,
 				6AB92C4215761A86008C1A4A /* Products */,
 			);
@@ -67,6 +131,7 @@
 		6AB92C4415761A86008C1A4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6AB92C6D157623E1008C1A4A /* AVFoundation.framework */,
 				6AB92C4515761A86008C1A4A /* UIKit.framework */,
 				6AB92C4715761A86008C1A4A /* Foundation.framework */,
 				6AB92C4915761A86008C1A4A /* CoreGraphics.framework */,
@@ -77,12 +142,21 @@
 		6AB92C4B15761A86008C1A4A /* NNVoicePlayer */ = {
 			isa = PBXGroup;
 			children = (
+				6A625ACA1577A09900636DAB /* NoteComposer */,
+				6A625AC815779B8300636DAB /* dance.mp3 */,
+				6A625AC215778ECA00636DAB /* openlove.mp3 */,
+				6A625AC0157781ED00636DAB /* bossa1.mp3 */,
+				6A625ABB15777B8D00636DAB /* NNMusicPlayer */,
 				6AB92C5415761A86008C1A4A /* AppDelegate.h */,
 				6AB92C5515761A86008C1A4A /* AppDelegate.m */,
 				6AB92C5715761A86008C1A4A /* ViewController.h */,
 				6AB92C5815761A86008C1A4A /* ViewController.m */,
 				6AB92C5A15761A86008C1A4A /* ViewController.xib */,
 				6AB92C4C15761A86008C1A4A /* Supporting Files */,
+				6AB92C6515761BAD008C1A4A /* Cell */,
+				6A625AE01577B8D300636DAB /* VoiceRecorderViewController.h */,
+				6A625AE11577B8D300636DAB /* VoiceRecorderViewController.m */,
+				6A625AE21577B8D400636DAB /* VoiceRecorderViewController.xib */,
 			);
 			path = NNVoicePlayer;
 			sourceTree = "<group>";
@@ -94,8 +168,23 @@
 				6AB92C4E15761A86008C1A4A /* InfoPlist.strings */,
 				6AB92C5115761A86008C1A4A /* main.m */,
 				6AB92C5315761A86008C1A4A /* NNVoicePlayer-Prefix.pch */,
+				6A625AD01577AD3000636DAB /* NNVoiceData.xcdatamodeld */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6AB92C6515761BAD008C1A4A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6AB92C6F15762466008C1A4A /* stop_icon.png */,
+				6AB92C6B15761CE8008C1A4A /* play_icon.png */,
+				6AB92C6215761BA8008C1A4A /* AudioPlayerCell.h */,
+				6AB92C6315761BA8008C1A4A /* AudioPlayerCell.m */,
+				6AB92C6615761BC0008C1A4A /* AudioPlayerCell.xib */,
+				6AB92C6815761C7B008C1A4A /* playControl.h */,
+				6AB92C6915761C7B008C1A4A /* playControl.m */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +240,14 @@
 			files = (
 				6AB92C5015761A86008C1A4A /* InfoPlist.strings in Resources */,
 				6AB92C5C15761A86008C1A4A /* ViewController.xib in Resources */,
+				6AB92C6715761BC0008C1A4A /* AudioPlayerCell.xib in Resources */,
+				6AB92C6C15761CE9008C1A4A /* play_icon.png in Resources */,
+				6AB92C7015762467008C1A4A /* stop_icon.png in Resources */,
+				6A625AC1157781ED00636DAB /* bossa1.mp3 in Resources */,
+				6A625AC315778ECA00636DAB /* openlove.mp3 in Resources */,
+				6A625AC915779B8300636DAB /* dance.mp3 in Resources */,
+				6A625ACF1577A0CF00636DAB /* NoteComposerViewController.xib in Resources */,
+				6A625AE41577B8D400636DAB /* VoiceRecorderViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +261,13 @@
 				6AB92C5215761A86008C1A4A /* main.m in Sources */,
 				6AB92C5615761A86008C1A4A /* AppDelegate.m in Sources */,
 				6AB92C5915761A86008C1A4A /* ViewController.m in Sources */,
+				6AB92C6415761BA8008C1A4A /* AudioPlayerCell.m in Sources */,
+				6AB92C6A15761C7B008C1A4A /* playControl.m in Sources */,
+				6A625ABF15777BAD00636DAB /* NNMusicPlayer.m in Sources */,
+				6A625ACE1577A0CF00636DAB /* NoteComposerViewController.m in Sources */,
+				6A625AD21577AD3000636DAB /* NNVoiceData.xcdatamodeld in Sources */,
+				6A625AD51577AD9600636DAB /* NNItem.m in Sources */,
+				6A625AE31577B8D400636DAB /* VoiceRecorderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +381,22 @@
 				6AB92C6115761A86008C1A4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6A625AD01577AD3000636DAB /* NNVoiceData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6A625AD11577AD3000636DAB /* NNVoiceData.xcdatamodel */,
+			);
+			currentVersion = 6A625AD11577AD3000636DAB /* NNVoiceData.xcdatamodel */;
+			path = NNVoiceData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6AB92C3815761A86008C1A4A /* Project object */;
 }
