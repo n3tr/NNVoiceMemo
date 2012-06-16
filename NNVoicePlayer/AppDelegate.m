@@ -6,6 +6,8 @@
 //  Copyright (c) 2555 Simpletail. All rights reserved.
 //
 
+#define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+
 #import "AppDelegate.h"
 
 #import "ViewController.h"
@@ -21,6 +23,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:[NSString stringWithFormat:@"%@/userVoice/",DOCUMENTS_FOLDER] isDirectory:nil]) {
+        [[NSFileManager defaultManager] createDirectoryAtPath:[NSString stringWithFormat:@"%@/userVoice/",DOCUMENTS_FOLDER] withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:[NSString stringWithFormat:@"%@/userVideo/",DOCUMENTS_FOLDER] isDirectory:nil]) {
+        [[NSFileManager defaultManager] createDirectoryAtPath:[NSString stringWithFormat:@"%@/userVideo/",DOCUMENTS_FOLDER] withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];

@@ -18,4 +18,6 @@
 @property (nonatomic, retain) NSString * textBody;
 @property (nonatomic, retain) NSString * type;
 
+- (void)removeAccsosiateFile;
+
 @end

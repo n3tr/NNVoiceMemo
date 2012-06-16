@@ -12,7 +12,13 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController
-<AudioPlayerCellDelegate,UITableViewDataSource,UITableViewDelegate,AVAudioPlayerDelegate,NSFetchedResultsControllerDelegate>
+<AudioPlayerCellDelegate,
+UITableViewDataSource,
+UITableViewDelegate,
+AVAudioPlayerDelegate,
+UIImagePickerControllerDelegate,
+UINavigationControllerDelegate,
+NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet AudioPlayerCell *_audioCell;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

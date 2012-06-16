@@ -17,4 +17,6 @@
 @dynamic textBody;
 @dynamic type;
 
+   
+
 @end

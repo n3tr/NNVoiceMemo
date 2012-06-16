@@ -11,10 +11,14 @@
 #import "NoteComposerViewController.h"
 #import "VoiceRecorderViewController.h"
 
-#import <AVFoundation/AVFoundation.h>
+#import "VideoPlayerViewController.h"
 
 #import "NNItem.h"
 #import "AppDelegate.h"
+#import <AVFoundation/AVFoundation.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface ViewController ()
 {
@@ -30,6 +34,7 @@
 - (void)skipAudioToSecond:(float)position;
 - (void)addNewNote:(id)sender;
 - (void)addNewVoice:(id)sender;
+- (void)showVideoRecorder:(id)sender;
 
 @end
 
@@ -89,7 +94,9 @@
     
     UIBarButtonItem *voicBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(addNewVoice:)];
     
-    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:composeBtn,voicBtn, nil];
+    UIBarButtonItem *cameraBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(showVideoRecorder:)];
+    
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:voicBtn,cameraBtn,composeBtn, nil];
 
 }
 
@@ -130,6 +137,7 @@
 {
     static NSString *audioCellID = @"AudioCell";
 	static NSString *noteCellID = @"NoteCell";
+    static NSString *videoCellID = @"VideoCell";
     
     NNItem *item = [_fetchedResultsController objectAtIndexPath:indexPath];
     if ([item.type isEqualToString:@"note"]) {
@@ -144,7 +152,7 @@
         
         return cell;
         
-    } else {
+    } else if([item.type isEqualToString:@"voice"]) {
 	
     
         if (playingAudioAtIndex == -1 || playingAudioAtIndex != indexPath.row) { // normal cell
@@ -164,6 +172,17 @@
         } else { // current playing cell
             return playingCell;
         }
+    }else{
+        UITableViewCell *cell =(UITableViewCell*)[tableView dequeueReusableCellWithIdentifier:noteCellID];
+        
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:videoCellID];
+        }
+        
+        cell.textLabel.text = item.title;
+        cell.detailTextLabel.text = @"Video";
+        
+        return cell;
     }
     
 }
@@ -184,6 +203,19 @@
         [self.navigationController presentModalViewController:navVC animated:YES];
         navVC = nil;
         noteVC = nil; 
+    } else if ([item.type isEqualToString:@"video"]){
+//        VideoPlayerViewController *videoVC = [[VideoPlayerViewController alloc] initWithNibName:@"VideoPlayerViewController" bundle:nil];
+        
+//        videoVC.filePath = item.filePath;
+        
+        
+        
+        MPMoviePlayerViewController *moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL fileURLWithPath:item.filePath]];
+        
+//        UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:videoVC];
+        
+//        [self.navigationController presentModalViewController:moviePlayer animated:YES];
+        [self.navigationController presentMoviePlayerViewControllerAnimated:moviePlayer];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
@@ -379,6 +411,7 @@
 
 - (void)addNewVoice:(id)sender
 {
+    [self stopAudioPlayer];
     VoiceRecorderViewController *voiceVC = [[VoiceRecorderViewController alloc] initWithNibName:@"VoiceRecorderViewController" bundle:nil];
     
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:voiceVC];
@@ -389,6 +422,78 @@
     [self.navigationController presentModalViewController:navVC animated:YES];
     navVC = nil;
     voiceVC = nil;
+}
+
+
+- (void)showVideoRecorder:(id)sender
+{
+    [self stopAudioPlayer];
+    
+    BOOL canCapture = [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera];
+  
+    
+    if (!canCapture ) {
+        
+        NSLog(@"Device Cannot capture video");
+        return;
+    }
+    
+    UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
+    cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    cameraUI.mediaTypes = [[NSArray alloc] initWithObjects: (NSString *) kUTTypeMovie, nil];
+    cameraUI.videoMaximumDuration = 5;
+    cameraUI.videoQuality = UIImagePickerControllerQualityTypeMedium;
+    cameraUI.allowsEditing = NO;
+    cameraUI.delegate = self;
+    
+    [self.navigationController presentModalViewController:cameraUI animated:YES];
+}
+
+#pragma mark - UIImagePicker Delegate
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+   
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    NSLog(@"%@",info);
+    
+    NSURL *sourceURL = (NSURL*)[info objectForKey:UIImagePickerControllerMediaURL];
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSTimeInterval timestamp = [[NSDate date] timeIntervalSince1970];
+    NSString *fileName = [NSString stringWithFormat:@"%f",timestamp];
+    
+    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"/userVideo/%@.mov",fileName]];
+    NSLog(@"%@",filePath);
+    
+    NSError *error = nil;
+    
+    [[NSFileManager defaultManager] copyItemAtPath:[sourceURL path] toPath:filePath error:&error];
+    
+    if (error) {
+        NSLog(@"cannot copy video");
+        [picker dismissModalViewControllerAnimated:YES];
+        return;
+    }
+    
+    NNItem *videoItem = [NSEntityDescription insertNewObjectForEntityForName:@"NNItem" inManagedObjectContext:_managedObjectContext];
+    
+    videoItem.title = @"Title Video";
+    videoItem.created_date = [NSDate date];
+    videoItem.type = @"video";
+    videoItem.filePath = filePath;
+    
+    AppDelegate *appDel = (AppDelegate*) [[UIApplication sharedApplication] delegate];
+    
+    [appDel saveContext];
+    [picker dismissModalViewControllerAnimated:YES];
+    
 }
 
 

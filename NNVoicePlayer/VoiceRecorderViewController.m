@@ -172,9 +172,7 @@
     // Create a new dated file
     NSTimeInterval now = [[NSDate date] timeIntervalSince1970];
     
-    if (![[NSFileManager defaultManager] fileExistsAtPath:[NSString stringWithFormat:@"%@/userVoice/",DOCUMENTS_FOLDER] isDirectory:nil]) {
-        [[NSFileManager defaultManager] createDirectoryAtPath:[NSString stringWithFormat:@"%@/userVoice/",DOCUMENTS_FOLDER] withIntermediateDirectories:YES attributes:nil error:nil];
-    }
+   
    
     filePath = [NSString stringWithFormat:@"%@/userVoice/%f.caf", DOCUMENTS_FOLDER, now] ;
     

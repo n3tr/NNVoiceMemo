@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A3E328F157876AB00835C7D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3E328E157876AB00835C7D /* MediaPlayer.framework */; };
+		6A3E3294157876C200835C7D /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E3292157876C200835C7D /* VideoPlayerViewController.m */; };
+		6A3E3295157876C200835C7D /* VideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A3E3293157876C200835C7D /* VideoPlayerViewController.xib */; };
 		6A625ABF15777BAD00636DAB /* NNMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A625ABE15777BAD00636DAB /* NNMusicPlayer.m */; };
 		6A625AC1157781ED00636DAB /* bossa1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A625AC0157781ED00636DAB /* bossa1.mp3 */; };
 		6A625AC315778ECA00636DAB /* openlove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A625AC215778ECA00636DAB /* openlove.mp3 */; };
@@ -18,6 +21,7 @@
 		6A625ADB1577ADB700636DAB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A625ADA1577ADB700636DAB /* CoreData.framework */; };
 		6A625AE31577B8D400636DAB /* VoiceRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A625AE11577B8D300636DAB /* VoiceRecorderViewController.m */; };
 		6A625AE41577B8D400636DAB /* VoiceRecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A625AE21577B8D400636DAB /* VoiceRecorderViewController.xib */; };
+		6A79C44015786F38000633AF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A79C43F15786F38000633AF /* MobileCoreServices.framework */; };
 		6AB92C4615761A86008C1A4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB92C4515761A86008C1A4A /* UIKit.framework */; };
 		6AB92C4815761A86008C1A4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB92C4715761A86008C1A4A /* Foundation.framework */; };
 		6AB92C4A15761A86008C1A4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB92C4915761A86008C1A4A /* CoreGraphics.framework */; };
@@ -35,6 +39,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A3E328E157876AB00835C7D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6A3E3291157876C200835C7D /* VideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerViewController.h; sourceTree = "<group>"; };
+		6A3E3292157876C200835C7D /* VideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
+		6A3E3293157876C200835C7D /* VideoPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayerViewController.xib; sourceTree = "<group>"; };
 		6A625ABD15777BAD00636DAB /* NNMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNMusicPlayer.h; path = NNMusicPlayer/NNMusicPlayer.h; sourceTree = "<group>"; };
 		6A625ABE15777BAD00636DAB /* NNMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNMusicPlayer.m; path = NNMusicPlayer/NNMusicPlayer.m; sourceTree = "<group>"; };
 		6A625AC0157781ED00636DAB /* bossa1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bossa1.mp3; sourceTree = "<group>"; };
@@ -50,6 +58,7 @@
 		6A625AE01577B8D300636DAB /* VoiceRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceRecorderViewController.h; sourceTree = "<group>"; };
 		6A625AE11577B8D300636DAB /* VoiceRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceRecorderViewController.m; sourceTree = "<group>"; };
 		6A625AE21577B8D400636DAB /* VoiceRecorderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceRecorderViewController.xib; sourceTree = "<group>"; };
+		6A79C43F15786F38000633AF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		6AB92C4115761A86008C1A4A /* NNVoicePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNVoicePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB92C4515761A86008C1A4A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6AB92C4715761A86008C1A4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A3E328F157876AB00835C7D /* MediaPlayer.framework in Frameworks */,
+				6A79C44015786F38000633AF /* MobileCoreServices.framework in Frameworks */,
 				6A625ADB1577ADB700636DAB /* CoreData.framework in Frameworks */,
 				6AB92C6E157623E1008C1A4A /* AVFoundation.framework in Frameworks */,
 				6AB92C4615761A86008C1A4A /* UIKit.framework in Frameworks */,
@@ -111,7 +122,7 @@
 		6AB92C3615761A86008C1A4A = {
 			isa = PBXGroup;
 			children = (
-				6A625ADA1577ADB700636DAB /* CoreData.framework */,
+				6A3E328E157876AB00835C7D /* MediaPlayer.framework */,
 				6AB92C4B15761A86008C1A4A /* NNVoicePlayer */,
 				6A625AD31577AD9600636DAB /* NNItem.h */,
 				6A625AD41577AD9600636DAB /* NNItem.m */,
@@ -131,6 +142,8 @@
 		6AB92C4415761A86008C1A4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A79C43F15786F38000633AF /* MobileCoreServices.framework */,
+				6A625ADA1577ADB700636DAB /* CoreData.framework */,
 				6AB92C6D157623E1008C1A4A /* AVFoundation.framework */,
 				6AB92C4515761A86008C1A4A /* UIKit.framework */,
 				6AB92C4715761A86008C1A4A /* Foundation.framework */,
@@ -157,6 +170,9 @@
 				6A625AE01577B8D300636DAB /* VoiceRecorderViewController.h */,
 				6A625AE11577B8D300636DAB /* VoiceRecorderViewController.m */,
 				6A625AE21577B8D400636DAB /* VoiceRecorderViewController.xib */,
+				6A3E3291157876C200835C7D /* VideoPlayerViewController.h */,
+				6A3E3292157876C200835C7D /* VideoPlayerViewController.m */,
+				6A3E3293157876C200835C7D /* VideoPlayerViewController.xib */,
 			);
 			path = NNVoicePlayer;
 			sourceTree = "<group>";
@@ -248,6 +264,7 @@
 				6A625AC915779B8300636DAB /* dance.mp3 in Resources */,
 				6A625ACF1577A0CF00636DAB /* NoteComposerViewController.xib in Resources */,
 				6A625AE41577B8D400636DAB /* VoiceRecorderViewController.xib in Resources */,
+				6A3E3295157876C200835C7D /* VideoPlayerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +285,7 @@
 				6A625AD21577AD3000636DAB /* NNVoiceData.xcdatamodeld in Sources */,
 				6A625AD51577AD9600636DAB /* NNItem.m in Sources */,
 				6A625AE31577B8D400636DAB /* VoiceRecorderViewController.m in Sources */,
+				6A3E3294157876C200835C7D /* VideoPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +365,7 @@
 				GCC_PREFIX_HEADER = "NNVoicePlayer/NNVoicePlayer-Prefix.pch";
 				INFOPLIST_FILE = "NNVoicePlayer/NNVoicePlayer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -358,6 +377,7 @@
 				GCC_PREFIX_HEADER = "NNVoicePlayer/NNVoicePlayer-Prefix.pch";
 				INFOPLIST_FILE = "NNVoicePlayer/NNVoicePlayer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
